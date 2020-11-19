@@ -8,14 +8,13 @@ import motion.kelas.recyclerviewsample.tools.load
 
 class LocationDetailViewHolder(val view : View, val context : Context) : RecyclerView.ViewHolder(view) {
     fun onBind(child : LocationDetailModel){
-        view.tvItemLocationDetailTitle.text = child.title
-        view.tvItemLocationDetailDescription.text = child.description
-        view.ivItemLocationDetail.load(child.images)
+        // TODO : FILL ONBIND ITEM HERE ! ! !
+
     }
 
     fun onClick(child: LocationDetailModel){
         view.setOnClickListener {
-
+            // TODO : FILL ONCLICK ITEM HERE ! ! !
         }
     }
 }

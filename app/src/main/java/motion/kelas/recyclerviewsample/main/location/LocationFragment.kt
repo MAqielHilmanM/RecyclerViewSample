@@ -1,23 +1,19 @@
 package motion.kelas.recyclerviewsample.main.location
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import kotlinx.android.synthetic.main.fragment_location.*
-import kotlinx.android.synthetic.main.fragment_location.view.*
-import kotlinx.android.synthetic.main.fragment_location.view.rvFragmentLocation
-
 import motion.kelas.recyclerviewsample.R
 
 /**
  * A simple [Fragment] subclass.
  */
 class LocationFragment : Fragment() {
-    val lists = arrayListOf<LocationModel>()
+    // TODO : CREATE PROPERTY LIST HERE ! ! !
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -30,19 +26,16 @@ class LocationFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        view.rvFragmentLocation.apply {
-            adapter = LocationAdapter(lists)
-            layoutManager = LinearLayoutManager(activity)
-        }
-
+        initRecyclerView(view)
         initDummy()
     }
 
+    private fun initRecyclerView(view: View) {
+        // TODO : CREATE RECYCLER VIEW HERE ! ! !
+
+    }
+
     private fun initDummy() {
-        lists.add(LocationModel("1", "Bandung"))
-        lists.add(LocationModel("2", "Jakarta"))
-        lists.add(LocationModel("3", "Sumedang"))
-        lists.add(LocationModel("4", "Banjaran"))
-        rvFragmentLocation.adapter?.notifyDataSetChanged()
+        // TODO : LOAD DATA DUMMY HERE ! ! !
     }
 }

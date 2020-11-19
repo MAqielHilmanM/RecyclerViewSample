@@ -1,6 +1,6 @@
 package motion.kelas.recyclerviewsample.main.location
 
-data class LocationModel(
-    val id : String,
-    val location : String
-)
+// TODO : CREATE LOCATION MODEL HERE ! ! !
+class LocationModel {
+
+}

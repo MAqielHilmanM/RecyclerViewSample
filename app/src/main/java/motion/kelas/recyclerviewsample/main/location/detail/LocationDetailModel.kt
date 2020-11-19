@@ -1,8 +1,6 @@
 package motion.kelas.recyclerviewsample.main.location.detail
 
+// TODO : FILL MODEL PARAMETER HERE ! ! !
 data class LocationDetailModel(
-    val id : String,
-    val title : String,
-    val description : String,
-    val images : String
+
 )

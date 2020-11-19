@@ -3,9 +3,4 @@ package motion.kelas.recyclerviewsample.tools
 import android.widget.ImageView
 import com.squareup.picasso.Picasso
 
-fun ImageView.load(url : String){
-    Picasso.get()
-        .load(url)
-        .fit()
-        .into(this)
-}
+// BUILD IMAGE VIEW EXTENSION TO LOAD FROM URL HERE ! ! !
