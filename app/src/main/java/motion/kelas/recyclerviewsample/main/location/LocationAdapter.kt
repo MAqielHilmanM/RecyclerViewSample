@@ -7,7 +7,7 @@ import motion.kelas.recyclerviewsample.R
 
 class LocationAdapter(val list: List<LocationModel>) : RecyclerView.Adapter<LocationViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): LocationViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.item_location, parent)
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.item_location, parent, false)
         return LocationViewHolder(view, parent.context)
     }
 

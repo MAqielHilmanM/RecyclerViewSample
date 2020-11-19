@@ -16,6 +16,7 @@ import motion.kelas.recyclerviewsample.main.home.adapter.HomeAdapter
 import motion.kelas.recyclerviewsample.main.home.model.HomeBannerModel
 import motion.kelas.recyclerviewsample.main.home.model.HomeListModel
 import motion.kelas.recyclerviewsample.main.home.model.HomeModel
+import motion.kelas.recyclerviewsample.main.home.model.HomeTitleModel
 
 /**
  * A simple [Fragment] subclass.
@@ -58,7 +59,7 @@ class HomeFragment : Fragment() {
         // ADD TITLE
         lists.add(
             HomeModel(
-            "Berita Terbaru",
+                HomeTitleModel("1","Berita Terbaru",false),
             HomeAdapter.TYPE_TITLE
         ))
 

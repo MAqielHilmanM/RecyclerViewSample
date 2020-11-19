@@ -18,21 +18,21 @@ class HomeAdapter(val list: List<HomeModel>) : RecyclerView.Adapter<HomeViewHold
         return when (viewType) {
             TYPE_BANNER -> {
                 HomeBannerViewHolder(
-                    LayoutInflater.from(parent.context).inflate(R.layout.item_home_banner, parent),
+                    LayoutInflater.from(parent.context).inflate(R.layout.item_home_banner, parent, false),
                     parent.context
                 )
             }
 
             TYPE_TITLE -> {
                 HomeTitleViewHolder(
-                    LayoutInflater.from(parent.context).inflate(R.layout.item_home_title, parent),
+                    LayoutInflater.from(parent.context).inflate(R.layout.item_home_title, parent, false),
                     parent.context
                 )
             }
 
             else -> {
                 HomeListViewHolder(
-                    LayoutInflater.from(parent.context).inflate(R.layout.item_home_list, parent),
+                    LayoutInflater.from(parent.context).inflate(R.layout.item_home_list, parent, false),
                     parent.context
                 )
             }

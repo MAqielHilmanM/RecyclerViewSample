@@ -9,7 +9,7 @@ import motion.kelas.recyclerviewsample.main.home.model.HomeTitleModel
 
 class HomeTitleViewHolder(val view: View, val context: Context): HomeViewHolder(view) {
     fun onBind(child : HomeTitleModel){
-        view.tvItemHomeTitle.text = child.id
+        view.tvItemHomeTitle.text = child.title
     }
 
     fun onClick(child: HomeTitleModel){
